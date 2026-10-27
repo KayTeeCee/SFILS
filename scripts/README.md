@@ -1,5 +1,2 @@
-# Database Scripts
-
-This folder contains all the initialization scripts that helps us (perhaps convert and) load the Excel sheet into the database tables.
-
-The scripts that are used to modify (indexing, moving, updating, data cleaning, ...) the database tables (after the data is loaded into the database) are also included here.
+# Scripts README
+This folder contains the scripts to initialize and optimize the dataset into the relational database tables. To recreate this setup, run the create_table.sql file in MySQL Workbench to define structural schemas, keys, and the core tables for libraries, patron_types, patrons, and patron_activity. Once built, the data from the dataset is loaded into the system using the MySQL Workbench Table Data Import Wizard. After the data is successfully loaded, the migration.sql script is run for custom indexing, data cleaning, and different relationships. I added several indexes to pull data without it taking too long. 
